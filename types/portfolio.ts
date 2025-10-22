@@ -132,9 +132,22 @@ export type ProjectsFilters = {
   tagsLabel: string;
 };
 
+export enum ProjectTag {
+  React = 'React',
+  TypeScript = 'TypeScript',
+  Redux = 'Redux',
+  Swiper = 'Swiper',
+  JavaScript = 'JavaScript',
+  Scss = 'SCSS',
+  Game = 'Game',
+  Vue = 'Vue',
+  Vuex = 'Vuex',
+  ChatGptApi = 'ChatGPT API',
+}
+
 export type Project = {
   name: string;
   description: string;
-  tags: string[];
+  tags: ProjectTag[];
   link: string;
 };

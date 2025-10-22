@@ -1,4 +1,4 @@
-import type { Project, ProjectsFilters, ProjectsHero } from '@/types/portfolio';
+import { ProjectTag, type Project, type ProjectsFilters, type ProjectsHero } from '@/types/portfolio';
 
 export const projectsHero: ProjectsHero = {
   label: 'Projects',
@@ -26,21 +26,21 @@ export const projects: Project[] = [
     name: 'Tech-spot',
     description:
       'A sleek phone catalog built with React and TypeScript. Redux drives state management, while Swiper powers product carousels for a smooth browsing experience.',
-    tags: ['React', 'TypeScript', 'Redux', 'Swiper'],
+    tags: [ProjectTag.React, ProjectTag.TypeScript, ProjectTag.Redux, ProjectTag.Swiper, ProjectTag.JavaScript],
     link: 'https://hotabu4.github.io/tech-spot/',
   },
   {
     name: '2048 Puzzle Game',
     description:
       'Browser-based 2048 puzzle game crafted with HTML, CSS, SCSS, and vanilla JavaScript. Emphasizes smooth gameplay, responsive layout, and classic visuals.',
-    tags: ['JavaScript', 'SCSS', 'Game'],
+    tags: [ProjectTag.JavaScript, ProjectTag.Scss, ProjectTag.Game],
     link: 'https://hotabu4.github.io/puzzle-game/',
   },
   {
     name: 'Adviser Elli',
     description:
       'Vue and Vuex advisor platform integrating ChatGPT API for intelligent responses. Focused on responsive design, dynamic state management, and collaborative delivery.',
-    tags: ['Vue', 'Vuex', 'ChatGPT API'],
+    tags: [ProjectTag.JavaScript, ProjectTag.Vue, ProjectTag.Vuex, ProjectTag.ChatGptApi],
     link: 'https://adviser-elli.netlify.app/',
   },
 ];
