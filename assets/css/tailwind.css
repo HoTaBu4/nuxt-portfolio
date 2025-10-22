@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small optional defaults */
+:root {
+  --brand-gradient: linear-gradient(90deg,#5b21b6 0%,#ec4899 100%);
+}
