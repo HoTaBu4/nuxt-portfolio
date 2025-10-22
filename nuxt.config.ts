@@ -1,8 +1,8 @@
 import { defineNuxtConfig } from "nuxt/config";
 
-
 export default defineNuxtConfig({
   app: {
+    baseURL: process.env.NUXT_APP_BASE_URL ?? '/',
     head: {
       title: 'My Portfolio',
       meta: [
@@ -26,6 +26,12 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+  nitro: {
+    preset: 'github-pages',
+    output: {
+      dir: '.output',
     },
   },
 })
