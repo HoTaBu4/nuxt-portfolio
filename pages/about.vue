@@ -123,14 +123,14 @@
           <p class="text-sm leading-relaxed text-slate-500">
             Outside of work you’ll find me exploring typography, experimenting with motion design, or teaching mentees how to build accessible interfaces. These hobbies keep me curious and feed back into the creativity I bring to each project.
           </p>
-          <div class="grid gap-3 text-sm text-slate-600">
-            <div class="rounded-xl border border-slate-100 bg-slate-50/80 px-4 py-3">
-              <p class="font-medium text-slate-900">Mentoring & workshops</p>
-              <p class="text-sm text-slate-500">Helping early-career developers level up with Vue, Nuxt, and component-driven UI patterns.</p>
+         <div class="grid gap-3 text-sm text-slate-600">
+           <div class="rounded-xl border border-slate-100 bg-slate-50/80 px-4 py-3">
+              <p class="font-medium text-slate-900">Continuous learning</p>
+              <p class="text-sm text-slate-500">Diving into courses, talks, and community resources to sharpen frontend craft and stay current.</p>
             </div>
             <div class="rounded-xl border border-slate-100 bg-slate-50/80 px-4 py-3">
-              <p class="font-medium text-slate-900">Visual storytelling</p>
-              <p class="text-sm text-slate-500">Exploring 3D, animation, and photography to keep my perspective fresh.</p>
+              <p class="font-medium text-slate-900">Endurance & focus</p>
+              <p class="text-sm text-slate-500">Training for 10 km runs and martial arts tournaments to stay disciplined, resilient, and energized.</p>
             </div>
           </div>
         </div>

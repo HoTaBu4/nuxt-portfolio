@@ -45,16 +45,16 @@
           <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur">
             <div class="space-y-6">
               <div class="flex items-center justify-between">
-                <p v-if="hero.snapshot?.eyebrow" class="text-xs font-semibold uppercase tracking-[0.4em] text-white/60">
-                  {{ hero.snapshot.eyebrow }}
+                <p v-if="heroSnapshot?.eyebrow" class="text-xs font-semibold uppercase tracking-[0.4em] text-white/60">
+                  {{ heroSnapshot.eyebrow }}
                 </p>
-                <span v-if="hero.snapshot?.status" class="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-200">
-                  {{ hero.snapshot.status }}
+                <span v-if="heroSnapshot?.status" class="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-200">
+                  {{ heroSnapshot.status }}
                 </span>
               </div>
               <div class="grid gap-4">
                 <div
-                  v-for="metric in hero.snapshot?.metrics ?? []"
+                  v-for="metric in heroMetrics"
                   :key="metric.label"
                   class="rounded-2xl border border-white/10 bg-white/5 p-5"
                 >
@@ -235,13 +235,26 @@ import ProjectCard from '@/components/ProjectCard.vue';
 import { profile } from '@/data/profile';
 import { projects } from '@/data/projects';
 
-const hero = profile.hero;
-const capabilities = profile.capabilities;
-const capabilitiesIntro = profile.capabilitiesIntro;
-const selectedWork = profile.selectedWork;
-const processIntro = profile.processIntro;
-const processSteps = profile.featuredProcess;
-const contact = profile.contact;
+const {
+  hero,
+  capabilities,
+  capabilitiesIntro,
+  selectedWork,
+  processIntro,
+  featuredProcess: processSteps,
+  contact,
+} = profile;
 
-const featuredProjects = computed(() => projects.slice(0, 4));
+const heroSnapshot = hero.snapshot ?? null;
+const heroMetrics = heroSnapshot?.metrics ?? [];
+
+const featuredProjectNames = ['Tech-spot', '2048 Puzzle Game', 'Adviser Elli'] as const;
+
+const featuredProjects = computed(() => {
+  const projectsByName = new Map(projects.map((project) => [project.name, project]));
+
+  return featuredProjectNames
+    .map((name) => projectsByName.get(name))
+    .filter((project): project is (typeof projects)[number] => Boolean(project));
+});
 </script>
