@@ -5,10 +5,10 @@
   "author": "Your Name",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "start": "nuxi start",
-    "generate": "nuxt generate"
+    "dev": "node ./scripts/run-nuxt.mjs dev",
+    "build": "node ./scripts/run-nuxt.mjs build",
+    "start": "node ./scripts/run-nuxt.mjs start",
+    "generate": "node ./scripts/run-nuxt.mjs generate"
   },
   "dependencies": {
     "@nuxt/content": "^3.7.1",
