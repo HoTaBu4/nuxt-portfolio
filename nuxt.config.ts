@@ -16,9 +16,6 @@ export default defineNuxtConfig({
     '~/assets/css/tailwind.css',
     '@/assets/styles/main.css',
   ],
-  plugins: [
-    '@/plugins/axios.ts'
-  ],
   modules: [
     '@nuxt/content'
   ],
