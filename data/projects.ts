@@ -43,4 +43,11 @@ export const projects: Project[] = [
     tags: [ProjectTag.JavaScript, ProjectTag.Vue, ProjectTag.Vuex, ProjectTag.ChatGptApi],
     link: 'https://adviser-elli.netlify.app/',
   },
+  {
+    name: 'chess game',
+    description:
+      'A two-player chess game built with React. Players can move pieces, capture opponents, and check for checkmate. Focuses on game logic, user interaction, and responsive design.',
+    tags: [ProjectTag.JavaScript, ProjectTag.React, ProjectTag.Game],
+    link: 'https://hotabu4.github.io/chess-game/',
+  },
 ];
