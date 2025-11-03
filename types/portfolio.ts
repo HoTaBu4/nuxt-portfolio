@@ -142,6 +142,7 @@ export enum ProjectTag {
   Game = 'Game',
   Vue = 'Vue',
   Vuex = 'Vuex',
+  Axios = 'Axios',
   ChatGptApi = 'ChatGPT API',
 }
 

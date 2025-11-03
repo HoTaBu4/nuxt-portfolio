@@ -50,4 +50,11 @@ export const projects: Project[] = [
     tags: [ProjectTag.JavaScript, ProjectTag.React, ProjectTag.Game],
     link: 'https://hotabu4.github.io/chess-game/',
   },
+  {
+    name: 'weather app',
+    description:
+      'A weather app built with React and TypeScript. Fetches weather data from an API and displays it in a user-friendly interface. Focuses on responsive design and real-time data updates.',
+    tags: [ProjectTag.JavaScript, ProjectTag.React, ProjectTag.TypeScript , ProjectTag.Axios],
+    link: 'https://hotabu4.github.io/weather-app/',
+  }, 
 ];
