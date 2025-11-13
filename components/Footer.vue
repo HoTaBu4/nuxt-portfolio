@@ -48,7 +48,7 @@
         <div class="flex items-center gap-4">
           <a href="#projects" class="transition hover:text-slate-600">Projects</a>
           <a href="#contact" class="transition hover:text-slate-600">Contact</a>
-          <a href="https://github.com/volodimirdzibik" target="_blank" rel="noopener" class="transition hover:text-slate-600">
+          <a href="https://github.com/HoTaBu4" target="_blank" rel="noopener" class="transition hover:text-slate-600">
             GitHub
           </a>
         </div>
@@ -67,8 +67,8 @@ const quickLinks = [
 ];
 
 const contactLinks = [
-  { label: 'Email', href: 'mailto:hello@volodimirdzibik.com' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/volodimirdzibik' },
-  { label: 'GitHub', href: 'https://github.com/volodimirdzibik' },
+  { label: 'Email', href: 'mailto:volodymyr.dz47@gmail.com' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/volodymyr-dzybyk-099482300/' },
+  { label: 'GitHub', href: 'https://github.com/HoTaBu4' },
 ];
 </script>

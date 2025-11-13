@@ -20,8 +20,8 @@ export const profile: ProfileData = {
       eyebrow: 'Snapshot',
       status: 'Availability: Freelance / Full-time',
       metrics: [
-        { value: '3 years', label: 'COMMERCIAL EXPERIENCE' },
-        { value: '10+ apps', label: 'PROJECTS CONTRIBUTED' },
+        { value: '2 years', label: 'COMMERCIAL EXPERIENCE' },
+        { value: '20+ projects', label: 'PROJECTS CONTRIBUTED' },
         { value: '5 teammates', label: 'TYPICAL SQUAD SIZE' },
       ],
     },
