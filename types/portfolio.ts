@@ -144,6 +144,11 @@ export enum ProjectTag {
   Vuex = 'Vuex',
   Axios = 'Axios',
   ChatGptApi = 'ChatGPT API',
+  Node = 'Node.js',
+  express = 'Express',
+  MongoDB = 'MongoDB',
+  Pug = 'pug'
+  Stripe = 'Stripe',
 }
 
 export type Project = {
