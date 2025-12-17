@@ -147,7 +147,7 @@ export enum ProjectTag {
   Node = 'Node.js',
   express = 'Express',
   MongoDB = 'MongoDB',
-  Pug = 'pug'
+  Pug = 'pug',
   Stripe = 'Stripe',
 }
 
